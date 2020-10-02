@@ -1,40 +1,15 @@
-// const person: {
-// 	name: string
-// 	number: number
-// } = {
-//
-
-// const TEAMLEAD = 0
-// const SENIORDEV = 1
-// const JRDEV = 2
-
-enum Role {
-	TEAMLEAD,
-	SENIORDEV,
-	JUNIORDEV,
-} // Possible to start from a different number. Also possible to assign not upfollowing numbers. Possible to input string. Or even a combination.
-
-const person = {
-	name: 'Alex',
-	number: 1,
-	hobbies: ['Skateboarding', 'Cooking'],
-	role: Role.JUNIORDEV,
+function combine(input1: number | string, input2: number | string) {
+	let result
+	if (typeof input1 === 'number' && typeof input2 === 'number') {
+		result = input1 + input2
+	} else {
+		result = input1.toString() + input2.toString()
+	}
+	return result
 }
 
-// person.role.push('team lead')
-// person.role[2] = 10
-// person.role = [0, 'team lead', 'senior developer']
+const combinedAges = combine(20, 36)
+console.log(combinedAges)
 
-let favoriteActivities: string[]
-favoriteActivities = ['Skateboarding']
-
-console.log(person.name)
-
-for (const hobby of person.hobbies) {
-	console.log(hobby.toUpperCase())
-	// console.log(hobby.map()) // !!! ERROR !! As we know it's not possible to map over strings
-}
-
-if (person.role === Role.JUNIORDEV) {
-	console.log('is junior dev')
-}
+const combinedNames = combine('Alex', 'Angela')
+console.log(combinedNames)
