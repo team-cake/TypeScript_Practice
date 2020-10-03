@@ -24,17 +24,44 @@ class Department {
 	}
 }
 
-const development = new Department('A1', 'Development')
+class ITDepartment extends Department {
+	admins: string[]
+	constructor(id: string, admins: string[]) {
+		super(id, 'IT')
+		this.admins = admins // for demo purposes to show this. needs to come after super
+	}
+}
 
-development.addEmployee('Alex')
-development.addEmployee('Angela')
-development.addEmployee('Micah')
+class AccountingDepartment extends Department {
+	constructor(id: string, private reports: string[]) {
+		super(id, 'Accounting')
+	}
 
-// development.employees[2] = 'Micah'
+	addReport(text: string) {
+		this.reports.push(text)
+	}
 
-development.describe()
-development.name = 'NEW NAME'
-development.printEmployeeInformation()
+	printReports() {
+		console.log(this.reports)
+	}
+}
+
+const it = new ITDepartment('A1', ['Alex'])
+
+it.addEmployee('Alex')
+it.addEmployee('Angela')
+it.addEmployee('Micah')
+// it.employees[2] = 'Micah'
+it.describe()
+it.name = 'NEW NAME'
+it.printEmployeeInformation()
+console.log(it)
+
+const accounting = new AccountingDepartment('B1', [])
+
+accounting.addReport('Something went wrong')
+accounting.printReports()
+console.log(accounting)
 
 // console.log(development)
 
