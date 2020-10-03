@@ -1,1 +1,3 @@
-console.log('Time to get started...');
+const userName = 'Alexander' // tsc app.ts --watch/-w
+
+console.log(userName)
