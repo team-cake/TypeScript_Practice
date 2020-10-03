@@ -10,3 +10,4 @@
 | "include": ["file/projectfolder"], | in tsconfig.json this can be added to compile only these files or folders                                    |
 | "files": ["file"],                 | in tsconfig.json this can be added to only compile these files                                               |
 | "target": "ES6"                    | in tsconfig.json this can be adjusted to accommodate your wish to compile the TypeScript to which JavaScript |
+| "sourceMap": true                  | in tsconfig.json this can be adjusted to accommodate your wish to debug ts files in browser/Sources          |
