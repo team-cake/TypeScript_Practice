@@ -1,1 +1,8 @@
-console.log('Sending stuff for practice purposes, ok...?')
+let logged
+
+function sendAnalytics(data: string) {
+	console.log(data)
+	logged = true
+}
+
+sendAnalytics('The data')

@@ -1,15 +1,9 @@
 const button = document.querySelector('button')!
 
+function clickHandler(message: string) {
+	console.log('Clicked!' + message)
+}
 // a comment
-button.addEventListener('click', () => {
-	console.log('Clicked!')
-})
-
-const map = new Map()
-
-let age: number
-age = 20
-
-const userName = 'Alex'
-
-console.log(userName)
+if (button) {
+	button.addEventListener('click', clickHandler.bind(null, "You're welcome"))
+}
