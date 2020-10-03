@@ -1,9 +1,9 @@
 class Department {
-	// private id: string
+	// private readonly id: string
 	// private name: string
 	private employees: string[] = []
 
-	constructor(private id: string, public name: string) {
+	constructor(private readonly id: string, public name: string) {
 		// this.id = id
 		// this.name = n
 	}
@@ -13,7 +13,8 @@ class Department {
 	}
 
 	addEmployee(employee: string) {
-		// validation?
+		// validation etc
+		// this.id = 'A2'
 		this.employees.push(employee)
 	}
 
@@ -26,9 +27,10 @@ class Department {
 const development = new Department('A1', 'Development')
 
 development.addEmployee('Alex')
-development.addEmployee('Alexa')
+development.addEmployee('Angela')
+development.addEmployee('Micah')
 
-// development.employees[2] = 'Angela'
+// development.employees[2] = 'Micah'
 
 development.describe()
 development.name = 'NEW NAME'
