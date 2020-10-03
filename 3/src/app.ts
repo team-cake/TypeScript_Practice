@@ -18,7 +18,7 @@ age = 29
 
 // console.log(result)
 
-const add = (a: number, b: number) => {
+const add = (a: number, b: number = 1) => {
 	return a + b
 }
 
@@ -33,4 +33,4 @@ if (button) {
 	button.addEventListener('click', (event) => console.log(event))
 }
 
-printOutput(add(5, 2))
+printOutput(add(5))
