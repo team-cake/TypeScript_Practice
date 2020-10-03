@@ -13,3 +13,4 @@
 | "sourceMap": true                  | in tsconfig.json this can be adjusted to accommodate your wish to debug ts files in browser/Sources                                           |
 | "outDir": "./_folder_"             | in tsconfig.json this can be adjusted to accommodate your wish to set the output of the compiled files in a specified folder (usually ./dist) |
 | "rootDir": "./_folder_"            | in tsconfig.json this can be adjusted to accommodate your wish to set the input of the compiled files in a specified folder (usually ./src)   |
+| "removeComments": true             | in tsconfig.json this can be adjusted to accommodate your wish to set the emitting of comments to output                                      |
