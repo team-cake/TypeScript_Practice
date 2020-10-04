@@ -25,3 +25,19 @@ console.log('mergedOb', mergedOb);
 
 // const mergedOb2 = merge({ name: 'Alex' }, { greet: 'hello' });
 // console.log('mergedOb2', mergedOb2.greet);
+
+interface Lengthy {
+	length: number;
+}
+
+function countAndDescribe<T extends Lengthy>(element: T): [T, string] {
+	let descriptionText = 'Got no value...';
+	if (element.length === 1) {
+		descriptionText = 'Got 1 element.';
+	} else if (element.length > 1) {
+		descriptionText = 'Got ' + element.length + ' elements.';
+	}
+	return [element, descriptionText];
+}
+
+console.log(countAndDescribe(['Skateboarding', 'Cooking']));
