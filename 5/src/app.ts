@@ -1,126 +1,133 @@
 type Admin = {
-	name: string
-	privileges: string[]
-}
+	name: string;
+	privileges: string[];
+};
 
 type Employee = {
-	name: string
-	startDate: Date
-}
+	name: string;
+	startDate: Date;
+};
 // interface ElevatedEmployee extends Employee, Admin {}
 
-type ElevatedEmployee = Admin & Employee
+type ElevatedEmployee = Admin & Employee;
 
 const a1: ElevatedEmployee = {
 	name: 'Alex',
 	privileges: ['Create software'],
 	startDate: new Date(),
-}
+};
 
-type Combinable = string | number
-type Numeric = number | boolean
+type Combinable = string | number;
+type Numeric = number | boolean;
 
-type Universal = Combinable & Numeric
+type Universal = Combinable & Numeric;
 
+function add(a: number, b: number): number;
+function add(a: string, b: string): string;
+function add(a: number, b: string): string;
+function add(a: string, b: number): string;
 function add(a: Combinable, b: Combinable) {
 	if (typeof a === 'string' || typeof b === 'string') {
 		// nice example of a typeguard
-		return a.toString() + b.toString()
+		return a.toString() + b.toString();
 	}
-	return a + b
+	return a + b;
 }
 
-type UnknownEmployee = Employee | Admin
+const result = add('Alex ', 'Cheuk');
+result.split(' ');
 
-function printEmployeeInformation(emp: UnknownEmployee) {
-	console.log('Name: ' + emp.name)
-	if ('privileges' in emp) {
-		// also a type guard
-		console.log('Privileges: ' + emp.privileges)
-	}
-	if ('startDate' in emp) {
-		// also a type guard
-		console.log('Start date: ' + emp.startDate)
-	}
-}
+// type UnknownEmployee = Employee | Admin
 
-// console.log(e1)
-printEmployeeInformation(a1)
-printEmployeeInformation({ name: 'Micah', startDate: new Date() })
+// function printEmployeeInformation(emp: UnknownEmployee) {
+// 	console.log('Name: ' + emp.name)
+// 	if ('privileges' in emp) {
+// 		// also a type guard
+// 		console.log('Privileges: ' + emp.privileges)
+// 	}
+// 	if ('startDate' in emp) {
+// 		// also a type guard
+// 		console.log('Start date: ' + emp.startDate)
+// 	}
+// }
 
-class Car {
-	drive() {
-		console.log('Driving...')
-	}
-}
+// // console.log(e1)
+// printEmployeeInformation(a1)
+// printEmployeeInformation({ name: 'Micah', startDate: new Date() })
 
-class Truck {
-	drive() {
-		console.log('Driving a truck...')
-	}
-	loadCargo(amount: number) {
-		console.log('Loading a cargo ... ' + amount)
-	}
-}
+// class Car {
+// 	drive() {
+// 		console.log('Driving...')
+// 	}
+// }
 
-type Vehicle = Car | Truck
-const v1 = new Car()
-const v2 = new Truck()
+// class Truck {
+// 	drive() {
+// 		console.log('Driving a truck...')
+// 	}
+// 	loadCargo(amount: number) {
+// 		console.log('Loading a cargo ... ' + amount)
+// 	}
+// }
 
-function useVehicle(vehicle: Vehicle) {
-	vehicle.drive()
-	if (vehicle instanceof Truck) {
-		vehicle.loadCargo(1000)
-	}
-}
+// type Vehicle = Car | Truck
+// const v1 = new Car()
+// const v2 = new Truck()
 
-useVehicle(v1)
-useVehicle(v2)
+// function useVehicle(vehicle: Vehicle) {
+// 	vehicle.drive()
+// 	if (vehicle instanceof Truck) {
+// 		vehicle.loadCargo(1000)
+// 	}
+// }
 
-interface Bird {
-	type: 'bird'
-	flyingSpeed: number
-}
+// useVehicle(v1)
+// useVehicle(v2)
 
-interface Horse {
-	type: 'horse'
-	runningSpeed: number
-}
+// interface Bird {
+// 	type: 'bird'
+// 	flyingSpeed: number
+// }
 
-type Animal = Bird | Horse
+// interface Horse {
+// 	type: 'horse'
+// 	runningSpeed: number
+// }
 
-function moveAnimal(animal: Animal) {
-	let speed
-	switch (animal.type) {
-		case 'bird':
-			speed = animal.flyingSpeed
-			break
-		case 'horse':
-			speed = animal.runningSpeed
-	}
-	console.log('Moving at speed: ' + speed)
-}
+// type Animal = Bird | Horse
 
-moveAnimal({ type: 'bird', flyingSpeed: 10 })
+// function moveAnimal(animal: Animal) {
+// 	let speed
+// 	switch (animal.type) {
+// 		case 'bird':
+// 			speed = animal.flyingSpeed
+// 			break
+// 		case 'horse':
+// 			speed = animal.runningSpeed
+// 	}
+// 	console.log('Moving at speed: ' + speed)
+// }
 
-// const userInputElement = <HTMLInputElement>(
-// 	document.getElementById('user-input')!
-// )
+// moveAnimal({ type: 'bird', flyingSpeed: 10 })
 
-const userInputElement = document.getElementById('user-input') // ! as HTMLInputElement
+// // const userInputElement = <HTMLInputElement>(
+// // 	document.getElementById('user-input')!
+// // )
 
-// userInputElement.value 'Hi There!'
+// const userInputElement = document.getElementById('user-input') // ! as HTMLInputElement
 
-if (userInputElement) {
-	;(userInputElement as HTMLInputElement).value = 'Hi there!'
-}
+// // userInputElement.value 'Hi There!'
 
-interface ErrorContainer {
-	// { email: 'Not a valid email', username: 'Must start with character}
-	[prop: string]: string // You don't always know in advance how many and which property names you will use
-}
+// if (userInputElement) {
+// 	;(userInputElement as HTMLInputElement).value = 'Hi there!'
+// }
 
-const errorBag: ErrorContainer = {
-	email: 'Not a valid email!',
-	name: 'Must start with a character!',
-}
+// interface ErrorContainer {
+// 	// { email: 'Not a valid email', username: 'Must start with character}
+// 	[prop: string]: string // You don't always know in advance how many and which property names you will use
+// }
+
+// const errorBag: ErrorContainer = {
+// 	email: 'Not a valid email!',
+// 	name: 'Must start with a capital character!',
+// }
