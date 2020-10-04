@@ -114,3 +114,13 @@ const userInputElement = document.getElementById('user-input') // ! as HTMLInput
 if (userInputElement) {
 	;(userInputElement as HTMLInputElement).value = 'Hi there!'
 }
+
+interface ErrorContainer {
+	// { email: 'Not a valid email', username: 'Must start with character}
+	[prop: string]: string // You don't always know in advance how many and which property names you will use
+}
+
+const errorBag: ErrorContainer = {
+	email: 'Not a valid email!',
+	name: 'Must start with a character!',
+}
