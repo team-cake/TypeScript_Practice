@@ -50,3 +50,38 @@ function extractAndConvert<T extends object, U extends keyof T>(
 }
 
 extractAndConvert({ name: 'Alex' }, 'name');
+
+class DataStorage<T extends string | number | boolean> {
+	private data: T[] = [];
+
+	addItem(item: T) {
+		this.data.push(item);
+	}
+
+	removeItem(item: T) {
+		if (this.data.indexOf(item) === -1) {
+			return;
+		}
+		this.data.splice(this.data.indexOf(item), 1); // -1
+	}
+
+	getItems() {
+		return [...this.data];
+	}
+}
+
+const textStorage = new DataStorage<string>();
+textStorage.addItem('Alex');
+textStorage.addItem('Micah');
+textStorage.removeItem('Alex');
+console.log(textStorage.getItems());
+
+const numberStorage = new DataStorage<number>();
+
+// const objStorage = new DataStorage<object>();
+// const alexObj = { name: 'Alex' };
+// objStorage.addItem(alexObj);
+// objStorage.addItem({ name: 'Micah' });
+// // ...
+// objStorage.removeItem(alexObj);
+// console.log(objStorage.getItems());
