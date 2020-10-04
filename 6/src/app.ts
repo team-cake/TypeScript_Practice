@@ -52,6 +52,7 @@ function extractAndConvert<T extends object, U extends keyof T>(
 extractAndConvert({ name: 'Alex' }, 'name');
 
 class DataStorage<T extends string | number | boolean> {
+	// generic classes are more useful with the primitive types
 	private data: T[] = [];
 
 	addItem(item: T) {
@@ -85,3 +86,25 @@ const numberStorage = new DataStorage<number>();
 // // ...
 // objStorage.removeItem(alexObj);
 // console.log(objStorage.getItems());
+
+interface CourseGoal {
+	title: string;
+	description: string;
+	completeUntil: Date;
+}
+
+function createCourseGoal(
+	title: string,
+	description: string,
+	date: Date
+): CourseGoal {
+	let courseGoal: Partial<CourseGoal> = {};
+	courseGoal.title = title;
+	courseGoal.description = description;
+	courseGoal.completeUntil = date;
+	return courseGoal as CourseGoal;
+}
+
+const names: Readonly<string[]> = ['Alex', 'Micah'];
+// names.push('Angela');
+// names.pop();
