@@ -36,9 +36,9 @@ class Person {
 	}
 }
 
-// const pers = new Person();
+const pers = new Person();
 
-// console.log(pers);
+console.log(pers);
 
 function Log(target: any, propertyName: string | Symbol) {
 	console.log('Property decorator!');
