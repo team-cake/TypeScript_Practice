@@ -131,7 +131,9 @@ class Component<T extends HTMLElement, U extends HTMLElement> {
 			true
 		);
 		this.element = importedNode.firstElementChild as U;
-		this.element.id = `${this.type}-projects`;
+		if (newElementId) {
+			this.element.id = newElementId;
+		}
 	}
 }
 
