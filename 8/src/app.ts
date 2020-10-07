@@ -226,7 +226,7 @@ class ProjectList
 		const listEl = this.element.querySelector('ul')!;
 		listEl.classList.add('droppable');
 	}
-	dropHandler(_: DragEvent) {}
+	dragDropHandler(_: DragEvent) {}
 	dragLeaveHandler(_: DragEvent) {}
 
 	configure() {
