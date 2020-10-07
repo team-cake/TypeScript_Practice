@@ -44,7 +44,8 @@ TypeScript. Heard so much about it and previously I had only touched the surface
 ## Project Status
 
 Project is: _in progress_  
-At the moment of writing I'm still playing around with TypeScript. Having a lot of fun!
+At the moment of writing I'm still playing around with TypeScript. Having a lot of fun!  
+Next mission: Writing modular code. e.g. [Folder 8](https://github.com/team-cake/TypeScript_Practice/tree/master/8) is still a lump of code in one ts file. Which is hideous!  
 
 ---
 
