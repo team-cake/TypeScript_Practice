@@ -165,7 +165,9 @@ abstract class Component<T extends HTMLElement, U extends HTMLElement> {
 }
 
 // ProjectItem Class
-class ProjectItem extends Component<HTMLUListElement, HTMLLIElement> {
+class ProjectItem
+	extends Component<HTMLUListElement, HTMLLIElement>
+	implements Draggable {
 	private project: Project;
 
 	get persons() {
@@ -183,6 +185,10 @@ class ProjectItem extends Component<HTMLUListElement, HTMLLIElement> {
 		this.configure();
 		this.renderContent();
 	}
+
+	dragStartHandler(event: DragEvent) {}
+
+	dragEndHandler(event: DragEvent) {}
 
 	configure() {}
 
