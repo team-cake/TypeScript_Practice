@@ -17,7 +17,7 @@ This repo is my TypeScript Practice repo
 
 ## Statement of Purpose
 
-TypeScript. Heard so much about it, decided to give it a go. I went on Udemy and had a look at Maximilian Schwarzmüller's TypeScript course. I was already following his YouTube channel, so I knew his style already. Super stoked I took on this course. Learning so much from it!
+TypeScript. Heard so much about it and previously I had only touched the surface of it, so I decided to give it a go and went in deep. I went on Udemy and had a look at Maximilian Schwarzmüller's TypeScript course. I was already following his YouTube channel, so I knew his style already. Super stoked I took on this course. Learning so much from it!
 
 ---
 
