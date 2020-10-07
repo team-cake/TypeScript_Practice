@@ -221,11 +221,19 @@ class ProjectList
 		this.renderContent();
 	}
 
-	dragOverHandler(event: DragEvent) {}
-	dropHandler(event: DragEvent) {}
-	dragLeaveHandler(event: DragEvent) {}
+	@autobind
+	dragOverHandler(_t: DragEvent) {
+		const listEl = this.element.querySelector('ul')!;
+		listEl.classList.add('droppable');
+	}
+	dropHandler(_: DragEvent) {}
+	dragLeaveHandler(_: DragEvent) {}
 
 	configure() {
+		this.element.addEventListener('dragover', this.dragOverHandler);
+		this.element.addEventListener('dragleave', this.dragLeaveHandler);
+		this.element.addEventListener('drop', this.dragOverHandler);
+
 		projectState.addListener((projects: Project[]) => {
 			const relevantProjects = projects.filter((prj) => {
 				if (this.type === 'active') {
