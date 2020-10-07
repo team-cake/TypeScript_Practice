@@ -186,11 +186,19 @@ class ProjectItem
 		this.renderContent();
 	}
 
-	dragStartHandler(event: DragEvent) {}
+	@autobind
+	dragStartHandler(event: DragEvent) {
+		console.log(event);
+	}
 
-	dragEndHandler(event: DragEvent) {}
+	dragEndHandler(_: DragEvent) {
+		console.log('Drag end');
+	}
 
-	configure() {}
+	configure() {
+		this.element.addEventListener('dragstart', this.dragStartHandler);
+		this.element.addEventListener('dragend', this.dragEndHandler);
+	}
 
 	renderContent() {
 		this.element.querySelector('h2')!.textContent = this.project.title;
