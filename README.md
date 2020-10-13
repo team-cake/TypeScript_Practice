@@ -23,7 +23,6 @@ TypeScript. Heard so much about it and previously I had only touched the surface
 
 ## Folders
 
-   
 [Folder 1: The basics, here I explored the different types.](https://github.com/team-cake/TypeScript_Practice/tree/master/1)  
 [Folder 2: Compiling TypeScript.](https://github.com/team-cake/TypeScript_Practice/tree/master/2)  
 [Folder 3: Next Generation JavaScript & TypeScript.](https://github.com/team-cake/TypeScript_Practice/tree/master/3)  
@@ -31,7 +30,7 @@ TypeScript. Heard so much about it and previously I had only touched the surface
 [Folder 5: Practicing advanced types.](https://github.com/team-cake/TypeScript_Practice/tree/master/5)  
 [Folder 6: Checking out generics.](https://github.com/team-cake/TypeScript_Practice/tree/master/6)  
 [Folder 7: Implementing decorators.](https://github.com/team-cake/TypeScript_Practice/tree/master/7)  
-[Folder 8: A TypeScript project: Drag & Drop. Kind of like a kanban board. Pretty cool!](https://github.com/team-cake/TypeScript_Practice/tree/master/8)  
+[Folder 8: A TypeScript project: Drag & Drop. Kind of like a kanban board. Pretty cool!](https://github.com/team-cake/TypeScript_Practice/tree/master/8)
 
 ---
 
@@ -45,13 +44,13 @@ TypeScript. Heard so much about it and previously I had only touched the surface
 
 Project is: _in progress_  
 At the moment of writing I'm still playing around with TypeScript. Having a lot of fun!  
-Next mission: Writing modular code. e.g. [Folder 8](https://github.com/team-cake/TypeScript_Practice/tree/master/8) is still a lump of code in one ts file. Which is hideous!  
+Next mission: Checking out webpacks, 3rd party libraries and React.js
 
 ---
 
 ## Setup
 
-To run this project, clone this project using:  
+To run this project, clone this project using:
 
 ```
 git clone git@github.com:team-cake/TypeScript_Practice.git
@@ -60,9 +59,9 @@ git clone git@github.com:team-cake/TypeScript_Practice.git
 install it locally using npm:
 
 ```
-$ cd ../TypeScript_Practice  
-$ cd ../*foldernumber*  
-$ npm install  
+$ cd ../TypeScript_Practice
+$ cd ../*foldernumber*
+$ npm install
 ```
 
 ---
@@ -70,6 +69,3 @@ $ npm install
 ## Contact
 
 Created by [Alex Cheuk](https://www.linkedin.com/in/alex-cheuk/) - feel free to contact me!
-
-
-
