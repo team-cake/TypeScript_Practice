@@ -32,7 +32,7 @@ function searchAddressHandler(event: Event) {
 				document.getElementById('map') as HTMLElement,
 				{
 					center: coordinates,
-					zoom: 12,
+					zoom: 16,
 				}
 			);
 
