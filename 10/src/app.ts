@@ -10,7 +10,7 @@ type GoogleGeocodingResponse = {
 	status: 'OK' | 'ZERO_RESULTS';
 };
 
-declare var google: any;
+// declare var google: any;
 
 function searchAddressHandler(event: Event) {
 	event.preventDefault();
@@ -32,7 +32,7 @@ function searchAddressHandler(event: Event) {
 				document.getElementById('map') as HTMLElement,
 				{
 					center: coordinates,
-					zoom: 8,
+					zoom: 12,
 				}
 			);
 
