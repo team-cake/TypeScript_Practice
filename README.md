@@ -30,7 +30,9 @@ TypeScript. Heard so much about it and previously I had only touched the surface
 [Folder 5: Practicing advanced types.](https://github.com/team-cake/TypeScript_Practice/tree/master/5)  
 [Folder 6: Checking out generics.](https://github.com/team-cake/TypeScript_Practice/tree/master/6)  
 [Folder 7: Implementing decorators.](https://github.com/team-cake/TypeScript_Practice/tree/master/7)  
-[Folder 8: A TypeScript project: Drag & Drop. Kind of like a kanban board. Pretty cool!](https://github.com/team-cake/TypeScript_Practice/tree/master/8)
+[Folder 8: A TypeScript project: Drag & Drop. Kind of like a kanban board. Pretty cool!](https://github.com/team-cake/TypeScript_Practice/tree/master/8)  
+[Folder 9: TypeScript & 3rd party libraries](https://github.com/team-cake/TypeScript_Practice/tree/master/9)  
+[Folder 10: A TypeScript project: Select. Used Google Maps!](https://github.com/team-cake/TypeScript_Practice/tree/master/10)
 
 ---
 
@@ -44,7 +46,7 @@ TypeScript. Heard so much about it and previously I had only touched the surface
 
 Project is: _in progress_  
 At the moment of writing I'm still playing around with TypeScript. Having a lot of fun!  
-Next mission: Checking out webpacks, 3rd party libraries and React.js
+Next mission: TypeScript and it's compatibility with React.js, Node.js and Express
 
 ---
 
