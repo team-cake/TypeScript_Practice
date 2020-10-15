@@ -3,7 +3,7 @@ import axios from 'axios';
 const form = document.querySelector('form')!;
 const addressInput = document.getElementById('address')! as HTMLInputElement;
 
-const GOOGLE_API_KEY = 'your_google_api_key_here';
+const GOOGLE_API_KEY = 'your_own_google_api_key';
 
 type GoogleGeocodingResponse = {
 	results: { geometry: { location: { lat: number; lng: number } } }[];
@@ -32,7 +32,7 @@ function searchAddressHandler(event: Event) {
 				document.getElementById('map') as HTMLElement,
 				{
 					center: coordinates,
-					zoom: 16,
+					zoom: 12,
 				}
 			);
 
