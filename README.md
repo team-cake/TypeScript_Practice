@@ -11,6 +11,7 @@ This repo is my TypeScript Practice repo
 - [Technologies](#technologies)
 - [Project Status](#project-status)
 - [Setup](#setup)
+- [Images](#images)
 - [Contact](#contact)
 
 ---
@@ -33,7 +34,8 @@ TypeScript. Heard so much about it and previously I had only touched the surface
 [Folder 8: A TypeScript project: Drag & Drop. Kind of like a kanban board. Pretty cool!](https://github.com/team-cake/TypeScript_Practice/tree/master/08)  
 [Folder 9: TypeScript & 3rd party libraries](https://github.com/team-cake/TypeScript_Practice/tree/master/09)  
 [Folder 10: A TypeScript project: Select. Used Google Maps!](https://github.com/team-cake/TypeScript_Practice/tree/master/10)  
-[Folder 11: A TypeScript/React project: To do app!](https://github.com/team-cake/TypeScript_Practice/tree/master/11)
+[Folder 11: A TypeScript/React project: To do app!](https://github.com/team-cake/TypeScript_Practice/tree/master/11)  
+[Folder 12: TypeScript with Node.js and Express](https://github.com/team-cake/TypeScript_Practice/tree/master/12)
 
 ---
 
@@ -45,9 +47,8 @@ TypeScript. Heard so much about it and previously I had only touched the surface
 
 ## Project Status
 
-Project is: _in progress_  
-At the moment of writing I'm still playing around with TypeScript. Having a lot of fun!  
-Next mission: TypeScript and it's compatibility with React.js, Node.js and Express
+Project is: _done_  
+Learned a lot! Will continue to explore the TypeScript world with future projects :)
 
 ---
 
@@ -61,11 +62,47 @@ git clone git@github.com:team-cake/TypeScript_Practice.git
 
 install it locally using npm:
 
+Folder 8 - Folder 8: A TypeScript project: Drag & Drop.
+
 ```
 $ cd ../TypeScript_Practice
 $ cd ../*foldernumber*
 $ npm install
+$ npm start
 ```
+
+Folder 10 - A TypeScript project: Select.
+
+```
+$ cd ../TypeScript_Practice
+$ cd ../*foldernumber*
+$ npm install
+$ npm start
+$ live-server
+```
+
+Folder 11 - A TypeScript/React project: To do app!
+
+```
+$ cd ../TypeScript_Practice
+$ cd ../*foldernumber*
+$ npm install
+$ npm start
+$ live-server
+```
+
+---
+
+## Images
+
+Folder 8 - Folder 8: A TypeScript project: Drag & Drop.  
+![Kanban](https://github.com/team-cake/TypeScript_Practice/blob/master/gif/kanbanstyle.gif)
+
+Folder 10 - A TypeScript project: Select.  
+![Select](https://github.com/team-cake/TypeScript_Practice/blob/master/gif/maps.gif)
+
+Folder 11 - A TypeScript/React project: To do app!  
+![Todo](https://github.com/team-cake/TypeScript_Practice/blob/master/gif/todo.gif)
 
 ---
 
