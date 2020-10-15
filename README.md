@@ -41,7 +41,7 @@ TypeScript. Heard so much about it and previously I had only touched the surface
 
 ## Technologies
 
-![](https://img.shields.io/badge/Code-TypeScript-informational?style=plastic&logo=typescript) ![](https://img.shields.io/badge/Code-JavaScript-informational?style=plastic&logo=javascript) ![](https://img.shields.io/badge/Code-React-informational?style=plastic&logo=react) ![](https://img.shields.io/badge/Tools-Node.js-informational?style=plastic&logo=node-dot-js) ![](https://img.shields.io/badge/Tools-Express-informational?style=plastic ![](https://img.shields.io/badge/Web-CSS3-informational?style=plastic&logo=css3)
+![](https://img.shields.io/badge/Code-TypeScript-informational?style=plastic&logo=typescript) ![](https://img.shields.io/badge/Code-JavaScript-informational?style=plastic&logo=javascript) ![](https://img.shields.io/badge/Code-React-informational?style=plastic&logo=react) ![](https://img.shields.io/badge/Tools-Node.js-informational?style=plastic&logo=node-dot-js) ![](https://img.shields.io/badge/Tools-Express-informational?style=plastic) ![](https://img.shields.io/badge/Web-CSS3-informational?style=plastic&logo=css3)
 
 ---
 
