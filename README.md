@@ -23,16 +23,17 @@ TypeScript. Heard so much about it and previously I had only touched the surface
 
 ## Folders
 
-[Folder 1: The basics, here I explored the different types.](https://github.com/team-cake/TypeScript_Practice/tree/master/1)  
-[Folder 2: Compiling TypeScript.](https://github.com/team-cake/TypeScript_Practice/tree/master/2)  
-[Folder 3: Next Generation JavaScript & TypeScript.](https://github.com/team-cake/TypeScript_Practice/tree/master/3)  
-[Folder 4: Exploring classes and interfaces.](https://github.com/team-cake/TypeScript_Practice/tree/master/4)  
-[Folder 5: Practicing advanced types.](https://github.com/team-cake/TypeScript_Practice/tree/master/5)  
-[Folder 6: Checking out generics.](https://github.com/team-cake/TypeScript_Practice/tree/master/6)  
-[Folder 7: Implementing decorators.](https://github.com/team-cake/TypeScript_Practice/tree/master/7)  
-[Folder 8: A TypeScript project: Drag & Drop. Kind of like a kanban board. Pretty cool!](https://github.com/team-cake/TypeScript_Practice/tree/master/8)  
-[Folder 9: TypeScript & 3rd party libraries](https://github.com/team-cake/TypeScript_Practice/tree/master/9)  
-[Folder 10: A TypeScript project: Select. Used Google Maps!](https://github.com/team-cake/TypeScript_Practice/tree/master/10)
+[Folder 1: The basics, here I explored the different types.](https://github.com/team-cake/TypeScript_Practice/tree/master/01)  
+[Folder 2: Compiling TypeScript.](https://github.com/team-cake/TypeScript_Practice/tree/master/02)  
+[Folder 3: Next Generation JavaScript & TypeScript.](https://github.com/team-cake/TypeScript_Practice/tree/master/03)  
+[Folder 4: Exploring classes and interfaces.](https://github.com/team-cake/TypeScript_Practice/tree/master/04)  
+[Folder 5: Practicing advanced types.](https://github.com/team-cake/TypeScript_Practice/tree/master/05)  
+[Folder 6: Checking out generics.](https://github.com/team-cake/TypeScript_Practice/tree/master/06)  
+[Folder 7: Implementing decorators.](https://github.com/team-cake/TypeScript_Practice/tree/master/07)  
+[Folder 8: A TypeScript project: Drag & Drop. Kind of like a kanban board. Pretty cool!](https://github.com/team-cake/TypeScript_Practice/tree/master/08)  
+[Folder 9: TypeScript & 3rd party libraries](https://github.com/team-cake/TypeScript_Practice/tree/master/09)  
+[Folder 10: A TypeScript project: Select. Used Google Maps!](https://github.com/team-cake/TypeScript_Practice/tree/master/10)  
+[Folder 11: A TypeScript/React project: To do app!](https://github.com/team-cake/TypeScript_Practice/tree/master/11)
 
 ---
 
